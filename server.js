@@ -30,19 +30,13 @@ const server = http.createServer((req, res) => {
     });
   }
   else if (page === '/palindrome') { // creates a coin page
-    let word =  'Christina'   //String(document.querySelector('input').value)
+    let word =  params.word
     let arrWord = word.split('').reverse().join('')
-    let palindrome;
-    if (word === arrWord) {
-      palindrome = 'it is a Palindrome!'
-    } else {
-      palindrome = 'it is not a Palindrome, try another word'
-    }
-
+   
     res.writeHead(200, {'Content-Type': 'application/json'}); // 200 = everything is good, tells the browser how to read the data it is receiving
     // res.write(data) - where you write your data
     res.end(JSON.stringify({ // sends response to server written out as JSON, anything within JSON stringify can be used as query paramaters
-      value: palindrome
+      isPalindrome: word === arrWord
     }
     ));
   }
