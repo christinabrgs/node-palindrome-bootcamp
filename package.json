@@ -1,0 +1,25 @@
+{
+  "name": "palindrome-bootcamp",
+  "version": "1.0.0",
+  "description": "### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christinabrgs/node-palindrome-bootcamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christinabrgs/node-palindrome-bootcamp/issues"
+  },
+  "homepage": "https://github.com/christinabrgs/node-palindrome-bootcamp#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
